@@ -91,7 +91,7 @@ XML
           xml.root do
             xml.send("root-step", harmony.root)
           end
-          xml.kind "dominant"
+          xml.kind "dominant", text: "7"
         end
       end
 
