@@ -2,6 +2,7 @@
 require "bundler/setup"
 require "rudimenter"
 
+# Rudiment Zero
 rudiment = Rudimenter::Rudiments::RudimentZero.new
 score = rudiment.generate
 
@@ -9,3 +10,12 @@ renderer = Rudimenter::Renderers::MusicxmlRenderer.new(score)
 File.write("tmp/rudiment_zero.musicxml", renderer.render)
 
 puts "Generated rudiment_zero.xml"
+
+# Rudiment One
+rudiment = Rudimenter::Rudiments::RudimentOne.new
+score = rudiment.generate
+
+renderer = Rudimenter::Renderers::MusicxmlRenderer.new(score)
+File.write("tmp/rudiment_one.musicxml", renderer.render)
+
+puts "Generated rudiment_one.xml"
