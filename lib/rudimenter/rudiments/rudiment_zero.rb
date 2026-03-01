@@ -15,7 +15,8 @@ module Rudimenter
                 octave: note_data[:octave],
                 string: note_data[:string],
                 fret: note_data[:fret],
-                alter: note_data[:alter] || 0
+                alter: note_data[:alter] || 0,
+                duration: note_data[:duration] || 1
               )
             )
           end
@@ -43,28 +44,28 @@ module Rudimenter
 
       def e7_pattern
         [
-          { step: "E", octave: 2, string: 6, fret: 0 },
-          { step: "E", octave: 3, string: 4, fret: 2 },
-          { step: "B", octave: 2, string: 5, fret: 2 },
-          { step: "E", octave: 3, string: 4, fret: 2 }
+          { step: "E", octave: 2, string: 6, fret: 0, duration: 2 },
+          { step: "E", octave: 3, string: 4, fret: 2, duration: 2 },
+          { step: "B", octave: 2, string: 5, fret: 2, duration: 2 },
+          { step: "E", octave: 3, string: 4, fret: 2, duration: 2 }
         ]
       end
 
       def a7_pattern
         [
-          { step: "A", octave: 2, string: 5, fret: 0 },
-          { step: "E", octave: 3, string: 4, fret: 2 },
-          { step: "E", octave: 2, string: 6, fret: 0 },
-          { step: "E", octave: 3, string: 4, fret: 2 }
+          { step: "A", octave: 2, string: 5, fret: 0, duration: 2 },
+          { step: "E", octave: 3, string: 4, fret: 2, duration: 2 },
+          { step: "E", octave: 2, string: 6, fret: 0, duration: 2 },
+          { step: "E", octave: 3, string: 4, fret: 2, duration: 2 }
         ]
       end
 
       def b7_pattern
         [
-          { step: "B", octave: 2, string: 5, fret: 2 },
-          { step: "D", alter: 1, octave: 3, string: 4, fret: 1 },
-          { step: "F", alter: 1, octave: 2, string: 6, fret: 2 },
-          { step: "D", alter: 1, octave: 3, string: 4, fret: 1 }
+          { step: "B", octave: 2, string: 5, fret: 2, duration: 2 },
+          { step: "D", alter: 1, octave: 3, string: 4, fret: 1, duration: 2 },
+          { step: "F", alter: 1, octave: 2, string: 6, fret: 2, duration: 2 },
+          { step: "D", alter: 1, octave: 3, string: 4, fret: 1, duration: 2 }
         ]
       end
     end
