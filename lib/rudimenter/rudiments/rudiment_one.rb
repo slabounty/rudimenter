@@ -77,7 +77,7 @@ module Rudimenter
         when "B"
           [
             { step: "F", alter: 1, octave: 4, string: 1, fret: 2 }, # F#
-            { step: "D", alter: 1, octave: 4, string: 2, fret: 3 }  # D#
+            { step: "B", octave: 3, string: 2, fret: 0 }            # B (open)
           ]
         else
           []

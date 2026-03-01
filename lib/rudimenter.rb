@@ -9,6 +9,7 @@ require_relative "rudimenter/harmony"
 
 require_relative "rudimenter/rudiments/rudiment_zero"
 require_relative "rudimenter/rudiments/rudiment_one"
+require_relative "rudimenter/rudiments/rudiment_two"
 require_relative "rudimenter/renderers/musicxml_renderer"
 
 module Rudimenter
